@@ -42,7 +42,7 @@ sites/simpletest
 modules/contrib
 
 # Ignore contributed profiles
-profiles/contrib
+# profiles/contrib
 
 # Ignore contributed themes
 themes/contrib
