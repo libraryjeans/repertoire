@@ -1,0 +1,27 @@
+uuid: a801172d-d410-4843-9054-5ae656f2a801
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_printable_song_files
+    - node.type.song
+  module:
+    - file
+id: node.song.field_printable_song_files
+field_name: field_printable_song_files
+entity_type: node
+bundle: song
+label: 'Printable song files'
+description: 'Upload printable lyrics, instrument notation, tablature, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc pdf rtf docx text'
+  max_filesize: '10 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

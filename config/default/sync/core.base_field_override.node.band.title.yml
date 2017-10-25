@@ -1,0 +1,18 @@
+uuid: 8dcd0c45-7f96-43fd-b75d-18550d75b75c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.band
+id: node.band.title
+field_name: title
+entity_type: node
+bundle: band
+label: 'Band Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

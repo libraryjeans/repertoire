@@ -1,0 +1,9 @@
+uuid: 52304421-57fd-455a-b886-1741f7726eaf
+langcode: en
+status: true
+dependencies: {  }
+name: Instruments
+vid: instruments
+description: 'List of instruments used in a song'
+hierarchy: 0
+weight: 0

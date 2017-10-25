@@ -1,0 +1,29 @@
+uuid: f275efb5-b61e-40a3-9777-ff0d958ce441
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_band_manager
+    - node.type.band
+id: node.band.field_band_manager
+field_name: field_band_manager
+entity_type: node
+bundle: band
+label: 'Band manager'
+description: 'Choose the band member(s) who will administrate your band account'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: true
+field_type: entity_reference

@@ -1,0 +1,40 @@
+uuid: a3433b1c-f768-4359-b2e7-022dddfe922b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.gig_calendar
+    - field.field.node.gig.body
+    - field.field.node.gig.field_gig_date
+    - field.field.node.gig.field_venue_address
+    - field.field.node.gig.field_venue_name
+    - node.type.gig
+  module:
+    - datetime
+    - user
+id: node.gig.gig_calendar
+targetEntityType: node
+bundle: gig
+mode: gig_calendar
+content:
+  field_gig_date:
+    weight: 0
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_venue_name:
+    type: string
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_venue_address: true
+  links: true

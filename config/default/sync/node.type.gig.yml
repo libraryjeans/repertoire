@@ -1,0 +1,18 @@
+uuid: 1a55309a-06c4-4242-a07e-249fed738f84
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Gig
+type: gig
+description: 'Create an event or gig for your band'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

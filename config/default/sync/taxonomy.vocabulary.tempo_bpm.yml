@@ -1,0 +1,9 @@
+uuid: d4be4c32-d91f-4f20-809c-7f606f37303e
+langcode: en
+status: true
+dependencies: {  }
+name: Tempo/BPM
+vid: tempo_bpm
+description: 'Pacing or speed of a song'
+hierarchy: 0
+weight: 0

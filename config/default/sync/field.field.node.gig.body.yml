@@ -1,0 +1,22 @@
+uuid: fc8a5544-d93d-401c-993f-6129a4e041cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.gig
+  module:
+    - text
+id: node.gig.body
+field_name: body
+entity_type: node
+bundle: gig
+label: 'Gig notes'
+description: 'Provide helpful info to your band members about the gig'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

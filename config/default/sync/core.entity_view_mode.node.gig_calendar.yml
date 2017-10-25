@@ -1,0 +1,10 @@
+uuid: 4c1826a5-74b7-401f-8f5e-b768052aa0e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.gig_calendar
+label: 'Gig calendar'
+targetEntityType: node
+cache: true

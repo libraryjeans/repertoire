@@ -1,0 +1,19 @@
+uuid: cd6b5c8d-e36b-42f1-af0e-5d42ba77e344
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_venue_name
+    - node.type.gig
+id: node.gig.field_venue_name
+field_name: field_venue_name
+entity_type: node
+bundle: gig
+label: 'Venue name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

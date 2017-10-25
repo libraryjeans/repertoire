@@ -1,0 +1,19 @@
+uuid: 42c62d53-5f15-4a71-9620-6778b105f432
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_band_email
+    - node.type.band
+id: node.band.field_band_email
+field_name: field_band_email
+entity_type: node
+bundle: band
+label: 'Band email'
+description: 'Public contact for booking the band'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

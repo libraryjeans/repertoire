@@ -1,0 +1,26 @@
+uuid: fe603dcc-9eff-4491-a53e-5e13b0b69b2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.set_list.field_songs
+    - node.type.set_list
+  module:
+    - user
+id: node.set_list.default
+targetEntityType: node
+bundle: set_list
+mode: default
+content:
+  field_songs:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

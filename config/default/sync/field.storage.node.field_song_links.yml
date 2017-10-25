@@ -1,0 +1,19 @@
+uuid: 6beb8268-40fc-4d9d-8bdd-937843f3c690
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_song_links
+field_name: field_song_links
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

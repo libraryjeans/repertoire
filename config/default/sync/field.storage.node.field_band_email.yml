@@ -1,0 +1,18 @@
+uuid: 74dfc247-cf13-47fd-8d37-239581e5029b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_band_email
+field_name: field_band_email
+entity_type: node
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

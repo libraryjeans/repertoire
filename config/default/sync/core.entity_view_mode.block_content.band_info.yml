@@ -1,0 +1,10 @@
+uuid: 9316d78d-d4f2-4483-b896-deacf61a10bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.band_info
+label: 'Band info'
+targetEntityType: block_content
+cache: true

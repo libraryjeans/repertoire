@@ -1,0 +1,28 @@
+uuid: f80a74cb-3f59-4846-9f70-a7787af66f28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_songs
+    - node.type.set_list
+    - node.type.song
+id: node.set_list.field_songs
+field_name: field_songs
+entity_type: node
+bundle: set_list
+label: Songs
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      song: song
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

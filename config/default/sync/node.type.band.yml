@@ -1,0 +1,18 @@
+uuid: e4b49bac-e5bf-437d-9fb4-b8925e7c0d8b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Band
+type: band
+description: 'Create a profile for your band'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

@@ -1,0 +1,23 @@
+uuid: f9351d3a-7f28-447f-888f-dbed31c3dab3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_song_links
+    - node.type.song
+  module:
+    - link
+id: node.song.field_song_links
+field_name: field_song_links
+entity_type: node
+bundle: song
+label: 'Song links'
+description: 'Add links to Youtube or song files'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

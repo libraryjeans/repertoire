@@ -1,0 +1,10 @@
+uuid: d2e2c720-9797-4931-9591-b791c3694d48
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.add_band_member
+label: 'Add a band member'
+targetEntityType: user
+cache: true

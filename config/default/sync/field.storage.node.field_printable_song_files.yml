@@ -1,0 +1,23 @@
+uuid: 32a495d3-adeb-4765-bd40-d9cad142521a
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_printable_song_files
+field_name: field_printable_song_files
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

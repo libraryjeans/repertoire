@@ -1,0 +1,19 @@
+uuid: dc7cb4e3-0dc4-4c52-998f-789964bc2632
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hometown
+    - node.type.band
+id: node.band.field_hometown
+field_name: field_hometown
+entity_type: node
+bundle: band
+label: Hometown
+description: 'What is your band''s hometown. E.g. <i>Seattle, WA</i>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

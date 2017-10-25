@@ -1,0 +1,9 @@
+uuid: 4db0e499-38fb-45dc-8d01-4f2de44bc0af
+langcode: en
+status: true
+dependencies: {  }
+name: Songwriter
+vid: songwriter
+description: 'List of songwriters to attribute to songs'
+hierarchy: 0
+weight: 0

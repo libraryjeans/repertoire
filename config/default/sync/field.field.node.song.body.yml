@@ -1,0 +1,22 @@
+uuid: c2d4a0bd-dec8-4e77-a8b6-255a4253d70b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.song
+  module:
+    - text
+id: node.song.body
+field_name: body
+entity_type: node
+bundle: song
+label: Lyrics
+description: 'Type or paste the lyrics and or tablature of the song'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

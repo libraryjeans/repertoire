@@ -1,0 +1,18 @@
+uuid: fd198025-a3b3-421c-a436-d925fb9e149e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.set_list
+id: node.set_list.title
+field_name: title
+entity_type: node
+bundle: set_list
+label: 'Set List / Gig'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

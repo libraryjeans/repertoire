@@ -1,0 +1,56 @@
+uuid: bba67a5b-f5a6-4c88-a127-ad4e84f714f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.gig.body
+    - field.field.node.gig.field_gig_date
+    - field.field.node.gig.field_venue_address
+    - field.field.node.gig.field_venue_name
+    - node.type.gig
+  module:
+    - datetime
+    - text
+    - user
+id: node.gig.default
+targetEntityType: node
+bundle: gig
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_gig_date:
+    weight: 0
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_venue_address:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_venue_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

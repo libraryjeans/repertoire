@@ -1,0 +1,21 @@
+uuid: ffef8a0c-1de9-4c93-bf9a-b7d1a20ba6d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.set_list
+    - field.field.block_content.set_list.field_set_list
+id: block_content.set_list.default
+targetEntityType: block_content
+bundle: set_list
+mode: default
+content:
+  field_set_list:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

@@ -1,0 +1,29 @@
+uuid: 27310364-642c-4516-bebf-5a740c86761c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tempo_bpm
+    - node.type.song
+    - taxonomy.vocabulary.tempo_bpm
+id: node.song.field_tempo_bpm
+field_name: field_tempo_bpm
+entity_type: node
+bundle: song
+label: Tempo/BPM
+description: 'Select or enter which tempo(s) your band normally performs this song'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tempo_bpm: tempo_bpm
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

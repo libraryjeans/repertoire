@@ -1,0 +1,21 @@
+uuid: 7d755fe0-afd9-45f6-97fa-a66498a61b00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gig_date
+    - node.type.gig
+  module:
+    - datetime
+id: node.gig.field_gig_date
+field_name: field_gig_date
+entity_type: node
+bundle: gig
+label: 'Gig date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

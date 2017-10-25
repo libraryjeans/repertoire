@@ -1,0 +1,30 @@
+uuid: f8ffc3d4-1ec8-4464-9ad2-0367ede177eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_instruments
+    - taxonomy.vocabulary.instruments
+  module:
+    - user
+id: user.user.field_instruments
+field_name: field_instruments
+entity_type: user
+bundle: user
+label: Instruments
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      instruments: instruments
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

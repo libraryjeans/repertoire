@@ -1,0 +1,33 @@
+uuid: ef0d29dc-c980-41db-a6fb-b1995af9eb6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gig.body
+    - field.field.node.gig.field_gig_date
+    - field.field.node.gig.field_venue_address
+    - field.field.node.gig.field_venue_name
+    - node.type.gig
+  module:
+    - datetime
+    - user
+id: node.gig.teaser
+targetEntityType: node
+bundle: gig
+mode: teaser
+content:
+  field_gig_date:
+    type: datetime_default
+    weight: 0
+    region: content
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_venue_address: true
+  field_venue_name: true
+  links: true

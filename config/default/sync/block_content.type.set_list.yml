@@ -1,0 +1,8 @@
+uuid: 085b084f-1842-47ef-b135-0d0a899a3eb7
+langcode: en
+status: true
+dependencies: {  }
+id: set_list
+label: 'Set list'
+revision: 0
+description: 'List of selected songs'

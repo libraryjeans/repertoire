@@ -1,0 +1,98 @@
+uuid: 2707152c-8458-4337-9cbe-161418662ea0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.song.body
+    - field.field.node.song.field_instrumentation
+    - field.field.node.song.field_key
+    - field.field.node.song.field_printable_song_files
+    - field.field.node.song.field_song_links
+    - field.field.node.song.field_songwriter
+    - field.field.node.song.field_tempo_bpm
+    - field.field.node.song.field_video
+    - node.type.song
+  module:
+    - file
+    - link
+    - text
+    - user
+    - video_embed_field
+id: node.song.default
+targetEntityType: node
+bundle: song
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_instrumentation:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_key:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_printable_song_files:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_song_links:
+    weight: 107
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_songwriter:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_tempo_bpm:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_video:
+    weight: 108
+    label: above
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

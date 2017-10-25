@@ -1,0 +1,29 @@
+uuid: b4415376-5da0-498b-aab4-62d6280b61e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_songwriter
+    - node.type.song
+    - taxonomy.vocabulary.songwriter
+id: node.song.field_songwriter
+field_name: field_songwriter
+entity_type: node
+bundle: song
+label: Songwriter
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      songwriter: songwriter
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 75abf076-43a1-4b22-a00e-e39a6a4a4783
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.band
+  module:
+    - text
+id: node.band.body
+field_name: body
+entity_type: node
+bundle: band
+label: 'Band description'
+description: 'A small blurb about your band'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

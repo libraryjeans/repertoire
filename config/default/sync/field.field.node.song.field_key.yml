@@ -1,0 +1,29 @@
+uuid: 86f97c8c-2f3d-46c3-a330-11aaaa48928c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_key
+    - node.type.song
+    - taxonomy.vocabulary.key
+id: node.song.field_key
+field_name: field_key
+entity_type: node
+bundle: song
+label: Key
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      key: key
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
