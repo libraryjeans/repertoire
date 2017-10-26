@@ -1,0 +1,25 @@
+uuid: c53ecebb-6559-4681-a31e-19b8260b0fc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_a_video
+    - node.type.song
+  module:
+    - video_embed_field
+id: node.song.field_add_a_video
+field_name: field_add_a_video
+entity_type: node
+bundle: song
+label: 'Add video'
+description: 'Embed a video of this song online or a practice session.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: youtube_playlist
+field_type: video_embed_field

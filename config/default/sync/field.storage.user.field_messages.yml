@@ -1,0 +1,20 @@
+uuid: 5513fe38-c2fd-4679-8db7-488397edcf8a
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - user
+id: user.field_messages
+field_name: field_messages
+entity_type: user
+type: comment
+settings:
+  comment_type: band_messages
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

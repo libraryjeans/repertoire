@@ -1,0 +1,43 @@
+uuid: b0ff3971-2dc2-4c7a-8f39-ee05667cd85b
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.band_messages
+    - field.field.comment.band_messages.comment_body
+    - field.field.comment.band_messages.field_message_a_band_member
+    - field.field.comment.band_messages.field_message_your_band
+  module:
+    - text
+id: comment.band_messages.default
+targetEntityType: comment
+bundle: band_messages
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_message_a_band_member:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_message_your_band:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

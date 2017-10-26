@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.song.body
+    - field.field.node.song.field_add_a_video
     - field.field.node.song.field_instrumentation
     - field.field.node.song.field_key
     - field.field.node.song.field_printable_song_files
@@ -29,6 +30,17 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_add_a_video:
+    weight: 109
+    label: above
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
     region: content
   field_instrumentation:
     weight: 103

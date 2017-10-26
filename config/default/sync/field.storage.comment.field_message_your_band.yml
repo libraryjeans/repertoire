@@ -1,0 +1,20 @@
+uuid: 24dd40bb-93ee-4e6a-9a61-aee6e808077c
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: comment.field_message_your_band
+field_name: field_message_your_band
+entity_type: comment
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

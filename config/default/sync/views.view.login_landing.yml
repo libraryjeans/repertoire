@@ -1,4 +1,4 @@
-uuid: 02f39d59-b2f7-4242-9165-114f1d2b53c3
+uuid: 00f36dd5-b76d-4208-8a39-4657e804ea3d
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ dependencies:
     - user
 _core:
   default_config_hash: GNfx9kN8-0_KgQ-xf3fjdXCCzZwXCI8T0IPFW8SIe7g
-id: frontpage
-label: Frontpage
+id: login_landing
+label: 'Login Landing'
 module: node
 description: 'All content promoted to the front page.'
 tag: default
@@ -46,11 +46,11 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: Frontpage
+          admin_label: Landing
           empty: true
           tokenize: false
           content:
-            value: "<h1>Catalog your songs. Organize your setlists. Be a hero.<h1>\n\n<div id=\"front_buttons\" style='text-align:center;'>\n<div id=\"front_reg_btn\"><a href =\"/user/register\"><button type=\"action\" class=\"button\">Register</button></a></div>\n<br/>\n<div id=\"front_login_btn\"><a href =\"/user/register\"><button type=\"action\" class=\"button\">Login</button></a></div>\n</div>"
+            value: "<div style=\"align:center;\">\n\n<h1>Let's get started<h1>\n\n<div id=\"landing_left\" style='float:left;'>\n<div id=\"landing_left_btn1\"><a href =\"node/add/band\"><button type=\"action\" class=\"button\">Build your band</button></a></div>\n<br/>\n<div id=\"landing_left_btn3\"><a href =\"node/add/song\"><button type=\"action\" class=\"button\">Catalog a song</button></a></div>\n</div>\n\n<div id=\"landing_right\" style='float:left;'>\n<div id=\"landing_left_btn2\"><a href =\"node/add/gig\"><button type=\"action\" class=\"button\">Book a gig</button></a></div>\n<br/>\n<div id=\"landing_left_btn4\"><a href =\"node/add/set_list\"><button type=\"action\" class=\"button\">Build a setlist</button></a></div>\n</div>\n<div style=\"clear:left;\"></div>\n</div>"
             format: full_html
           plugin_id: text
       exposed_form:
@@ -279,7 +279,7 @@ display:
       tags: {  }
   page_1:
     display_options:
-      path: node
+      path: create
       display_extenders: {  }
     display_plugin: page
     display_title: Page

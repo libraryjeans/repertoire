@@ -1,0 +1,28 @@
+uuid: 1c1d8a2b-fe30-49c4-924f-f2279ac463d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.band_messages
+    - field.storage.comment.field_message_your_band
+    - node.type.band
+id: comment.band_messages.field_message_your_band
+field_name: field_message_your_band
+entity_type: comment
+bundle: band_messages
+label: 'Message your band'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      band: band
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

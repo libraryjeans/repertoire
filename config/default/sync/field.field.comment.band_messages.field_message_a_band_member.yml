@@ -1,0 +1,25 @@
+uuid: 1b21986c-5d1a-430b-ad11-7a6848a32798
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.band_messages
+    - field.storage.comment.field_message_a_band_member
+id: comment.band_messages.field_message_a_band_member
+field_name: field_message_a_band_member
+entity_type: comment
+bundle: band_messages
+label: 'Message a band member'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: band_member_messaging
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

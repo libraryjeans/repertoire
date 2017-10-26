@@ -1,0 +1,8 @@
+uuid: 27d9eed7-1748-409d-8b22-0024839a8f58
+langcode: en
+status: true
+dependencies: {  }
+id: band_messages
+label: 'Band messages'
+target_entity_type_id: user
+description: 'Send an email to your band.'

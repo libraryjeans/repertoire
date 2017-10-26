@@ -5,10 +5,13 @@ dependencies:
   config:
     - field.field.node.band.body
     - field.field.node.band.field_band_email
+    - field.field.node.band.field_band_logo
     - field.field.node.band.field_band_manager
     - field.field.node.band.field_hometown
+    - image.style.thumbnail
     - node.type.band
   module:
+    - image
     - path
     - text
 id: node.band.default
@@ -38,6 +41,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
+    region: content
+  field_band_logo:
+    weight: 125
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_band_manager:
     weight: 124

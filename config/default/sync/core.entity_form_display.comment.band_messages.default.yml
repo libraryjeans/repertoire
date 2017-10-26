@@ -1,0 +1,50 @@
+uuid: 1cc38555-ede6-4f59-bb86-9150002a0a1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.band_messages
+    - field.field.comment.band_messages.comment_body
+    - field.field.comment.band_messages.field_message_a_band_member
+    - field.field.comment.band_messages.field_message_your_band
+  module:
+    - text
+id: comment.band_messages.default
+targetEntityType: comment
+bundle: band_messages
+mode: default
+content:
+  author:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    type: text_textarea
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_message_a_band_member:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_message_your_band:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  subject:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

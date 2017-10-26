@@ -6,11 +6,13 @@ dependencies:
     - field.field.user.user.field_band_manager
     - field.field.user.user.field_band_name
     - field.field.user.user.field_instruments
+    - field.field.user.user.field_messages
     - field.field.user.user.field_name
     - field.field.user.user.field_phone
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - comment
     - image
     - telephone
     - user
@@ -50,6 +52,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_messages:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
     region: content
   field_name:
     weight: 0
