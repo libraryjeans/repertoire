@@ -1,0 +1,9 @@
+uuid: cdbb6f4b-0b39-4d0a-ae9d-f0d82c41db39
+langcode: en
+status: true
+dependencies: {  }
+id: band_member
+label: 'Band member'
+weight: 3
+is_admin: null
+permissions: {  }

@@ -1,0 +1,8 @@
+uuid: 71643e93-c4b8-4dc5-97a6-0c2a75ad6909
+langcode: en
+status: true
+dependencies: {  }
+id: rotating_content
+label: 'Rotating Content'
+revision: 0
+description: 'Images and quotes bands can use to inspire them'

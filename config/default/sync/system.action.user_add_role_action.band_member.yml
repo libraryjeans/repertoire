@@ -1,0 +1,14 @@
+uuid: a3181020-f346-4154-9ba7-25614f1de093
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.band_member
+  module:
+    - user
+id: user_add_role_action.band_member
+label: 'Add the Band member role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: band_member

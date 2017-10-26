@@ -1,0 +1,22 @@
+uuid: d8b89eb0-f4ad-40e4-ae2d-494c28ee3b7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.rotating_content
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.rotating_content.body
+field_name: body
+entity_type: block_content
+bundle: rotating_content
+label: 'Famous Quotes'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

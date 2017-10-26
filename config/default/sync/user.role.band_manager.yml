@@ -1,0 +1,9 @@
+uuid: 9cbc54e5-f9f8-42b8-9603-677c4d89e339
+langcode: en
+status: true
+dependencies: {  }
+id: band_manager
+label: 'Band manager'
+weight: 4
+is_admin: null
+permissions: {  }

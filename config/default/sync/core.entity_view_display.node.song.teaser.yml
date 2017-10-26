@@ -5,24 +5,42 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.song.body
+    - field.field.node.song.field_instrumentation
+    - field.field.node.song.field_key
+    - field.field.node.song.field_printable_song_files
+    - field.field.node.song.field_song_links
+    - field.field.node.song.field_songwriter
+    - field.field.node.song.field_tempo_bpm
+    - field.field.node.song.field_video
     - node.type.song
   module:
-    - text
     - user
 id: node.song.teaser
 targetEntityType: node
 bundle: song
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
+  field_key:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: inline
     settings:
-      trim_length: 600
+      link: true
     third_party_settings: {  }
+  field_songwriter:
+    type: entity_reference_label
+    weight: 0
     region: content
-  links:
-    weight: 100
-    region: content
-hidden: {  }
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_instrumentation: true
+  field_printable_song_files: true
+  field_song_links: true
+  field_tempo_bpm: true
+  field_video: true
+  links: true

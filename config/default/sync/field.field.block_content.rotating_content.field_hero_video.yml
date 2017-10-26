@@ -1,18 +1,18 @@
-uuid: c53ecebb-6559-4681-a31e-19b8260b0fc9
+uuid: 544bd94d-6479-43ec-ab93-e037b0b7f6b4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_add_a_video
-    - node.type.song
+    - block_content.type.rotating_content
+    - field.storage.block_content.field_hero_video
   module:
     - video_embed_field
-id: node.song.field_add_a_video
-field_name: field_add_a_video
-entity_type: node
-bundle: song
-label: 'Add video'
-description: 'Embed a video of this song online or a practice session.'
+id: block_content.rotating_content.field_hero_video
+field_name: field_hero_video
+entity_type: block_content
+bundle: rotating_content
+label: 'Hero video'
+description: ''
 required: false
 translatable: false
 default_value: {  }

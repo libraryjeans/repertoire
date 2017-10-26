@@ -1,0 +1,32 @@
+uuid: 7a7c7310-f12b-425a-b042-037ae1b45e4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.set_list
+  module:
+    - node
+    - views
+  theme:
+    - drupal8_zymphonies_theme
+id: views_block__set_list_block_1
+theme: drupal8_zymphonies_theme
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:set_list-block_1'
+settings:
+  id: 'views_block:set_list-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      set_list: set_list
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

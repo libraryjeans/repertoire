@@ -1,0 +1,14 @@
+uuid: 01ac8dff-d56b-4bd0-8586-5cdc156f6e98
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.band_manager
+  module:
+    - user
+id: user_remove_role_action.band_manager
+label: 'Remove the Band manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: band_manager

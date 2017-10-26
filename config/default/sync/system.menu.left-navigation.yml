@@ -1,0 +1,8 @@
+uuid: a7168c2b-6601-4db0-8e0c-d8f4283c73a5
+langcode: en
+status: true
+dependencies: {  }
+id: left-navigation
+label: 'Left navigation'
+description: 'Create content by type links'
+locked: false

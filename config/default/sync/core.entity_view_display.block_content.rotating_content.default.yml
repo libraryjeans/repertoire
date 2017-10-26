@@ -1,0 +1,46 @@
+uuid: 82cc099f-e2ef-4bd4-b97f-b81f9b6ccc1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.rotating_content
+    - field.field.block_content.rotating_content.body
+    - field.field.block_content.rotating_content.field_hero_image
+    - field.field.block_content.rotating_content.field_hero_video
+  module:
+    - image
+    - text
+    - video_embed_field
+id: block_content.rotating_content.default
+targetEntityType: block_content
+bundle: rotating_content
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_hero_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_hero_video:
+    weight: 2
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+hidden: {  }

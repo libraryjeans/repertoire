@@ -1,0 +1,14 @@
+uuid: 455ccb11-d72b-4545-a082-ca82eec53100
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.band_manager
+  module:
+    - user
+id: user_add_role_action.band_manager
+label: 'Add the Band manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: band_manager

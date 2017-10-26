@@ -1,0 +1,33 @@
+uuid: bb9c88e0-9808-43b3-8860-a40ab8e07b7f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:rotating_content:c5394d7e-bfbe-49ec-aad5-278690ffcb3f'
+  module:
+    - block_content
+    - node
+  theme:
+    - drupal8_zymphonies_theme
+id: johnnycash
+theme: drupal8_zymphonies_theme
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'block_content:c5394d7e-bfbe-49ec-aad5-278690ffcb3f'
+settings:
+  id: 'block_content:c5394d7e-bfbe-49ec-aad5-278690ffcb3f'
+  label: 'Johnny Cash'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      gig: gig
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

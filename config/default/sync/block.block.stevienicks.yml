@@ -1,0 +1,33 @@
+uuid: 0d6ec881-61ee-4310-8947-f3576a87592f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:rotating_content:1324d503-3414-4d31-a680-e1f2024002c3'
+  module:
+    - block_content
+    - node
+  theme:
+    - drupal8_zymphonies_theme
+id: stevienicks
+theme: drupal8_zymphonies_theme
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'block_content:1324d503-3414-4d31-a680-e1f2024002c3'
+settings:
+  id: 'block_content:1324d503-3414-4d31-a680-e1f2024002c3'
+  label: 'Stevie Nicks'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      band: band
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
