@@ -6,4 +6,16 @@ id: band_manager
 label: 'Band manager'
 weight: 4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create band content'
+  - 'create gig content'
+  - 'create set_list content'
+  - 'create song content'
+  - 'delete own band content'
+  - 'delete own gig content'
+  - 'delete own set_list content'
+  - 'delete own song content'
+  - 'edit own band content'
+  - 'edit own gig content'
+  - 'edit own set_list content'
+  - 'edit own song content'

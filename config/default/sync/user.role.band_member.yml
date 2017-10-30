@@ -6,4 +6,7 @@ id: band_member
 label: 'Band member'
 weight: 3
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create band content'
+  - 'delete own band content'
+  - 'edit own band content'

@@ -4,9 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.user.add_band_member
-    - field.field.user.user.field_band_manager
     - field.field.user.user.field_band_name
     - field.field.user.user.field_instruments
+    - field.field.user.user.field_messages
     - field.field.user.user.field_name
     - field.field.user.user.field_phone
     - field.field.user.user.user_picture
@@ -34,9 +34,9 @@ content:
     region: content
 hidden:
   contact: true
-  field_band_manager: true
   field_band_name: true
   field_instruments: true
+  field_messages: true
   field_phone: true
   language: true
   timezone: true

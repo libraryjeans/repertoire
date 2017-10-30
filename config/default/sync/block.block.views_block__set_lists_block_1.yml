@@ -1,22 +1,22 @@
-uuid: 7a7c7310-f12b-425a-b042-037ae1b45e4b
+uuid: abfd1cb5-38b1-4ada-aeb9-8239cb354508
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.set_list
+    - views.view.set_lists
   module:
     - node
     - views
   theme:
     - drupal8_zymphonies_theme
-id: views_block__set_list_block_1
+id: views_block__set_lists_block_1
 theme: drupal8_zymphonies_theme
 region: sidebar_second
-weight: -7
+weight: 0
 provider: null
-plugin: 'views_block:set_list-block_1'
+plugin: 'views_block:set_lists-block_1'
 settings:
-  id: 'views_block:set_list-block_1'
+  id: 'views_block:set_lists-block_1'
   label: ''
   provider: views
   label_display: visible
@@ -26,7 +26,7 @@ visibility:
   node_type:
     id: node_type
     bundles:
-      set_list: set_list
+      gig: gig
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

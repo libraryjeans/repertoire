@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_band_manager
     - field.field.user.user.field_band_name
     - field.field.user.user.field_instruments
     - field.field.user.user.field_messages
@@ -28,13 +27,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_band_manager:
-    weight: 6
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_band_name:
     weight: 3
     settings:

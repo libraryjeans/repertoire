@@ -11,7 +11,7 @@ dependencies:
     - drupal8_zymphonies_theme
 id: johnnycash
 theme: drupal8_zymphonies_theme
-region: sidebar_second
+region: page_title
 weight: -6
 provider: null
 plugin: 'block_content:c5394d7e-bfbe-49ec-aad5-278690ffcb3f'
@@ -27,7 +27,7 @@ visibility:
   node_type:
     id: node_type
     bundles:
-      gig: gig
+      song: song
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
