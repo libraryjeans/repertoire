@@ -24,6 +24,7 @@ module:
   honeypot: 0
   image: 0
   link: 0
+  menu_token: 0
   menu_ui: 0
   node: 0
   options: 0
@@ -37,6 +38,7 @@ module:
   taxonomy: 0
   telephone: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   update: 0

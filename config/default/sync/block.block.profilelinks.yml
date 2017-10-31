@@ -1,0 +1,37 @@
+uuid: 795fe8a0-3354-40d9-8a60-645c58693bef
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.profile-links
+  module:
+    - system
+    - user
+  theme:
+    - drupal8_zymphonies_theme
+id: profilelinks
+theme: drupal8_zymphonies_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:profile-links'
+settings:
+  id: 'system_menu_block:profile-links'
+  label: 'Profile LInks'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

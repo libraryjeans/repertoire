@@ -13,7 +13,8 @@
         "drupal/video_embed_field": "^1.5",
         "drupal/drupal8_zymphonies_theme": "^1.0",
         "drupal/config_installer": "^1.5",
-        "drupal/honeypot": "^1.27"
+        "drupal/honeypot": "^1.27",
+        "drupal/menu_token": "^1.0@alpha"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
